@@ -1,0 +1,446 @@
+body, html{
+	/*height: 100%;*/
+	margin: 0;
+	font-family: 'Rubik', sans-serif;
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+
+#pc{
+	display: none;
+}
+
+#tiempo-m{
+	position: relative;
+	margin: 0px;
+	margin-bottom: initial;
+	padding: 5%;
+	border: solid 1px;
+	float: left;
+	border-radius: 0px 0px 71px 71px;
+	-moz-border-radius: 0px 0px 71px 71px;
+	-webkit-border-radius: 0px 0px 71px 71px;
+	z-index: 5;
+
+	/*Colo degradado generado externamente*/
+	background: rgba(147,206,222,1);
+	background: -moz-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
+	background: -webkit-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+	background: -o-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+	background: -ms-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+	background: linear-gradient(to bottom, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=0 );
+}
+
+#tiempo-m .iconos{
+	width: 15%;
+}
+
+#tiempo-m a{
+	position: relative;
+	top: -25px;
+	font-size: 1.5em;
+}
+
+#barra-movil{
+	border: 1px solid;
+	position: absolute;
+    top: 3%;
+    bottom: 3%;
+    right: 50%;
+}
+
+#frase-movil{
+	position: absolute !important;
+	font-size: 0.8em !important;
+	top: 5% !important;
+	right: 2% !important;
+	left: 52% !important;
+	text-align: center !important;
+}
+
+#tiempo-m .iconos-grandes{
+	position: absolute;
+	top: 24%;
+	left: 59%;
+	width: 30%;
+}
+
+#movil #modulos-m{
+	position: fixed;
+	overflow: scroll;
+	z-index: 0;
+	top: 15%;
+	right: 0%;
+	left: 0%;
+	bottom: 0%;
+	background-image: url('../multimedia/fondo-m-valvulas.jpg');
+}
+
+#margen{
+	width: 100%;
+	height: 20%;
+	background-image: url('../multimedia/fondo-m-valvulas.jpg');
+}
+
+.modulos-m{
+	position: relative;
+	width: 100%;
+	height: 15%;
+	background-color: #558758;
+	margin-bottom: 2px;
+}
+
+#modulos-m img{
+	width: 20%;
+	position: absolute;
+	bottom: 0%;
+	left: 40%;
+}
+
+#modulos-m a{
+	position: absolute;
+	bottom: 50%;
+	left: 5%;
+	font-size: 1.3em;
+}
+
+#modulos-m .switch{
+	position: absolute;
+	right: 5%;
+	top: 5%;
+}
+
+
+
+/*Contenido de ordenador*/
+#pc button{
+	cursor: pointer;
+}
+
+#boton{
+	position: fixed;
+	top: 5%;
+	right: 5%;
+}
+
+#honoff{
+	margin-left: 10%;
+	color: white;
+	text-shadow: none;
+}
+
+#contenido-pc{
+	position: relative;
+	margin-top: 10%;
+	margin-right: 25%;
+	max-height: 500px;
+	border: solid;
+	overflow: auto;
+	background-color: grey;
+}
+
+#boton-auto{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	font-size: 3em;
+	border-radius: 10px;
+}
+
+#boton-aplicar{
+	position: sticky;
+	bottom: 0px;
+	float: right;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#registros{
+	position: fixed;
+	right: 0%;
+	bottom: 0%;
+	width: 20%;
+	text-align: center;
+	overflow: auto;
+	background-color: #71889B;
+	border-radius: 18px 0px 0px 0px;
+	-moz-border-radius: 18px 0px 0px 0px;
+	-webkit-border-radius: 18px 0px 0px 0px;
+	max-height: 60%;
+}
+
+.datos{
+	background-color: #6A757E;
+	border-radius: 18px px 0px 0px;
+	-moz-border-radius: 18px px 0px 0px;
+	-webkit-border-radius: 18px px 0px 0px;
+}
+
+#boton-reg{
+	top: 0px;
+	border-radius: 0px 0px 18px 18px;
+	-moz-border-radius: 0px 0px 18px 18px;
+	-webkit-border-radius: 0px 0px 18px 18px;
+	position: sticky;
+	cursor: pointer;
+}
+
+#losRegistros{
+	position: fixed;
+	z-index: 11010101010;
+	top: 0%;
+	right: 0%;
+	left: 0%;
+	bottom: 0%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	align-content: center;
+}
+
+#losRegistrosTexto{
+	border: solid;
+	background-color: white;
+	overflow: auto;
+	border-radius: 10px;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 10%;
+	max-height: 40%;
+	padding: 2%;
+}
+
+#xSalir{
+	position: inherit;
+	margin-top: 1%;
+	left: 48%;
+	cursor: pointer;
+	width: 5%;
+}
+
+#triangulo {
+    width: 0; 
+    height: 0; 
+    border-right: 100px solid #6A757E;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+}
+
+#h1titulo{
+	position: fixed;
+	color: black;
+	font-size: 3em;
+	margin-left: 3%;
+	background-color: #6A757E;
+	top: 0.5%;
+    left: 3%;
+    border-radius: 200px 0px 0px 200px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Código copiado para generar los botones on/off*/
+.switch-grande {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 34px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+.switch-grande input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#input-grande:checked + .slider:before {
+  -webkit-transform: translateX(126px);
+  -ms-transform: translateX(126px);
+  transform: translateX(126px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+@media (min-width: 400px) and (min-height: 400px){
+	body{
+		/*background-image: url("../multimedia/fondo-pc-valvulas.jpg");*/
+		background: rgba(235,233,249,1);
+		background: -moz-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(235,233,249,1)), color-stop(50%, rgba(216,208,239,1)), color-stop(51%, rgba(206,199,236,1)), color-stop(100%, rgba(193,191,234,1)));
+		background: -webkit-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+		background: -o-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+		background: -ms-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+		background: linear-gradient(to right, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1 );
+	}
+
+	#fondo-pc{
+		position: fixed;
+		top: 0%;
+		right: 0%;
+		left: 0%;
+		bottom: 0%;
+		background-image: linear-gradient(to right top, #303641, #243943, #193c3f, #193d35, #263d27);
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -5;
+	}
+
+	#pc{
+		display: initial;
+	}
+
+	#movil{
+		display: none;
+	}
+}
